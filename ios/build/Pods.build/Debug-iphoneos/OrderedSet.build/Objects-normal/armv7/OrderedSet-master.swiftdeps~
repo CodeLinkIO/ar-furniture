@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)"
+options: "099ab06a75047a4f0d5e0353aeadad66b41a967b13aca620f04d19b38fb38560"
+build_start_time: [1635853545, 796267986]
+build_end_time: [1635853554, 765335083]
+inputs:
+  "/Users/tinh/Projects/Furniture-App-UI-2-Flutter/ios/Pods/OrderedSet/Sources/OrderedSet.swift": [1635837876, 392693996]

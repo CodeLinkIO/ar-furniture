@@ -6,10 +6,9 @@ import 'package:http/http.dart' as http;
 // Fetch our Categories from API
 Future<List<Category>> fetchCategories() async {
   const String apiUrl =
-      "https://5f210aa9daa42f001666535e.mockapi.io/api/categories";
+      "https://us-central1-ar-furniture-ac1b7.cloudfunctions.net/ar/categories";
 
   final response = await http.get(apiUrl);
-
   if (response.statusCode == 200) {
     // If the server did return a 200 OK response,
     // then parse the JSON.

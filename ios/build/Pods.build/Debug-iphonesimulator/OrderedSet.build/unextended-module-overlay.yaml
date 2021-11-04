@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/tinh/Projects/Furniture-App-UI-2-Flutter/build/ios/Debug-iphonesimulator/OrderedSet/OrderedSet.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/tinh/Projects/Furniture-App-UI-2-Flutter/ios/build/Pods.build/Debug-iphonesimulator/OrderedSet.build/unextended-module.modulemap",
+    }]
+  }]
+}

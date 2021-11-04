@@ -10,36 +10,13 @@ class HomeScreen extends StatelessWidget {
     // It help us to  make our UI responsive
     SizeConfig().init(context);
     return Scaffold(
-      appBar: buildAppBar(),
-      body: Body(),
-    );
-  }
-
-  AppBar buildAppBar() {
-    return AppBar(
-      leading: IconButton(
-        icon: SvgPicture.asset(
-          "assets/icons/menu.svg",
-          height: SizeConfig.defaultSize * 2, //20
-        ),
-        onPressed: () {},
+//        appBar: buildAppBar(),
+      body: Align(
+	      alignment: Alignment.topCenter,
+        child: Container(
+            constraints: BoxConstraints(maxWidth: 1240),
+            child: Body()),
       ),
-      actions: <Widget>[
-        IconButton(
-          icon: SvgPicture.asset(
-            "assets/icons/scan.svg",
-            height: SizeConfig.defaultSize * 2.4, //24
-          ),
-          onPressed: () {},
-        ),
-        Center(
-          child: Text(
-            "Scan",
-            style: TextStyle(color: kTextColor, fontWeight: FontWeight.bold),
-          ),
-        ),
-        SizedBox(width: SizeConfig.defaultSize),
-      ],
     );
   }
 }

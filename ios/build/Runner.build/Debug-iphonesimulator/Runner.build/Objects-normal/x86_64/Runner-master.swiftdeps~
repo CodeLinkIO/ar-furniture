@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)"
+options: "18fb2054a20b2a3c4592f30dbd293527eea3c43b5698655661751fd24bd87b01"
+build_start_time: [1635828581, 671838045]
+build_end_time: [1635828586, 866084098]
+inputs:
+  "/Users/tinh/Projects/Furniture-App-UI-2-Flutter/ios/Runner/AppDelegate.swift": [1635827091, 902933835]
