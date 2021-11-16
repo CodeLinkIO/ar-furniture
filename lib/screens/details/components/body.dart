@@ -24,7 +24,7 @@ class _BodyState extends State<Body> {
 
   @override
   void initState() {
-    Future.delayed(const Duration(milliseconds: 5000), () {
+    Future.delayed(const Duration(milliseconds: 500), () {
       setState(() {
         loaded = true;
       });
@@ -36,18 +36,20 @@ class _BodyState extends State<Body> {
   Widget build(BuildContext context) {
     double defaultSize = SizeConfig.defaultSize;
     return SingleChildScrollView(
-	    physics: NeverScrollableScrollPhysics(),
-	    child: SizedBox(
+      physics: NeverScrollableScrollPhysics(),
+      child: SizedBox(
         width: double.infinity,
-        height: SizeConfig.orientation == Orientation.landscape
-            ? SizeConfig.screenWidth
-            : SizeConfig.screenHeight - AppBar().preferredSize.height,
+        height: SizeConfig.orientation == Orientation.landscape ? SizeConfig.screenWidth : SizeConfig.screenHeight - AppBar().preferredSize.height,
         child: Column(
           children: [
-          	SizedBox(height: defaultSize,),
-	          buildAppBar(context),
+            SizedBox(
+              height: defaultSize,
+            ),
+            buildAppBar(context),
             ProductInfo(product: widget.product),
-            SizedBox(height: defaultSize* 2,),
+            SizedBox(
+              height: defaultSize * 2,
+            ),
             ProductDescription(
               product: widget.product,
               press: () {},
@@ -59,17 +61,17 @@ class _BodyState extends State<Body> {
   }
 
   AppBar buildAppBar(BuildContext context) {
-	  return AppBar(
-		  leading: IconButton(
-			  icon: SvgPicture.asset("assets/icons/arrow-long-left.svg"),
-			  onPressed: () {
-				  Navigator.pop(context);
-			  },
-		  ),
-		  title: SvgPicture.asset(
-			  "assets/icons/codelink.svg",
-			  height: SizeConfig.defaultSize * 2.4,
-		  ),
-	  );
+    return AppBar(
+      leading: IconButton(
+        icon: SvgPicture.asset("assets/icons/arrow-long-left.svg"),
+        onPressed: () {
+          Navigator.pop(context);
+        },
+      ),
+      title: SvgPicture.asset(
+        "assets/icons/codelink.svg",
+        height: SizeConfig.defaultSize * 2.4,
+      ),
+    );
   }
 }
