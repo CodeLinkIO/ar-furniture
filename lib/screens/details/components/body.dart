@@ -39,7 +39,6 @@ class _BodyState extends State<Body> {
       physics: NeverScrollableScrollPhysics(),
       child: SizedBox(
         width: double.infinity,
-        height: SizeConfig.orientation == Orientation.landscape ? SizeConfig.screenWidth : SizeConfig.screenHeight - AppBar().preferredSize.height,
         child: Column(
           children: [
             SizedBox(

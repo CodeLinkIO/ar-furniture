@@ -19,11 +19,7 @@ class DetailsScreen extends StatelessWidget {
     SizeConfig().init(context);
     return Scaffold(
       backgroundColor: kSecondaryColor,
-      body: Align(
-          alignment: Alignment.topCenter,
-          child: Container(
-              constraints: BoxConstraints(maxWidth: 1240),
-              child: Body(product: product))),
+      body: Align(alignment: Alignment.topCenter, child: Body(product: product)),
     );
   }
 }
